@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Properties</h2>
+<div style="margin-bottom: 10px;">
+    <mat-label style="margin-right: 86px;">Rule out</mat-label>
+    <mat-checkbox class="example-margin"></mat-checkbox>
+</div>
+<div>
+    <mat-label style="margin-right: 70px;">Abstractor</mat-label>
+    <mat-form-field appearance="fill">
+        <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option value="patday"> Pat Day </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div>
+    <mat-label style="margin-right: 45px;">Assigned Date</mat-label>
+    <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
